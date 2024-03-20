@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+     
+<teiHeader>
+  <fileDesc>
+    <titleStmt>
+      <title>Helen Borthwick's diary 1913-1919</title>
+      <author>Helen Borthwick</author>
+      <respStmt>
+        <resp> Typewritten transcription with handwritten corrections from original handwritten manuscript</resp>
+        <persName>David Jamison</persName>
+      </respStmt>
+      <respStmt>
+        <resp>Photographs of diary</resp>
+        <persName>Martin Fricker</persName>
+      </respStmt>
+      <respStmt>
+        <resp>Electronic transcription, TEI markup, XML encoding</resp>
+        <persName>Leo Esson</persName>
+      </respStmt>
+    </titleStmt>
+    <extent>One typewritten page covering six days</extent>
+    <publicationStmt>
+      <publisher>University of Borås</publisher>
+      <date>December 2023</date>
+      <availability status="restricted">
+        <p>Available for academic research purposes only.</p>
+        <licence target="https://creativecommons.org/licenses/by-nc-nd/4.0">
+          <p>
+              Original text authored by Helen Borthwick, access granted with the permission of her surviving family. 
+              Transcription by David Jamison. Markup by Leo Esson. Electronic version distributed under a CC-BY-SA 4.0 license.
+          </p>
+        </licence>
+      </availability>
+    </publicationStmt>
+    <sourceDesc>
+      <biblStruct>
+        <monogr>
+          <author>Helen Borthwick</author>
+          <editor role="transcriber">David Jamison</editor>
+          <editor role="electronic edition">Leo Esson</editor>
+          <title>Helen Borthwick's diary 1913-1919</title>
+          <imprint>
+            <biblScope>August 6th - 12th</biblScope>
+          </imprint>
+        </monogr>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <projectDesc>
+      <p>Coursework for the module Digitising Cultural Heritage Material during Master's programme: Library and Information Science, Digital Library and Information Services at University of Borås</p>
+    </projectDesc>
+    <editorialDecl>
+      <correction>
+        <p>The typewritten manuscript contains some errors, corrected in pencil by the transcribers; these have been reflected as substitutions, with the aim of reflecting this source as accurately as possible. 
+          That manuscript also contains some errors which were not caught by the transcribers; these have been reflected as corrections, with the aim of improving the reading experience.
+        </p>
+      </correction>
+      <normalization>
+        <p>Some abbreviations have the full version of the word offered as a choice.
+          Outdated place names have been left as they appear in the manuscript.</p>
+      </normalization>
+    </editorialDecl>
+    <samplingDecl>
+      <p>Pages were chosen to contain a variety of historical events, people, places, and the opportunity for editorial choices.</p>
+    </samplingDecl>
+  </encodingDesc>
+</teiHeader>
+
+<standOff>
+  <listPerson>
+    <person xml:id="pers_HB">
+      <persName>
+        Helen Borthwick
+      </persName>
+      <note>
+        The author of this diary
+      </note>
+    </person>
+    <person>
+      <persName xml:id="pers_All">
+        Allen
+      </persName>
+    </person>
+    <person>
+      <persName xml:id="pers_Ali">
+        Alice
+      </persName>
+      <note>Helen's sister</note>
+    </person>
+    <person>
+      <persName xml:id="pers_Holt">
+        Holtherns
+      </persName>
+    </person>
+    <person>
+      <persName xml:id="pers_Jes">
+        Jessie
+      </persName>
+    </person>
+    <person>
+      <persName xml:id="pers_Pat">
+        Patsy
+      </persName>
+    </person>
+    <person>
+      <persName xml:id="pers_King">
+        King
+      </persName>
+      <note>
+        This does not refer to the monarch, but to a fellow member of the SWH whose surname was King.
+      </note>
+    </person>
+    <person>
+      <persName xml:id="pers_Art">
+        Arthur
+      </persName>
+    </person>
+    <person>
+      <persName xml:id="pers_Cook">
+        Dr Cook
+      </persName>
+    </person>
+    <person>
+      <persName xml:id="pers_McDn">
+        McDonald
+      </persName>
+    </person>
+    <person>
+      <persName xml:id="pers_McL">
+        Miss McLeod
+      </persName>
+    </person>
+    <person>
+      <persName xml:id="pers_PDunn">
+        Mr Patrick Dunn
+      </persName>
+    </person>
+    <person>
+      <persName xml:id="pers_Holm">
+        Mr Holmes
+      </persName>
+    </person>
+    <person>
+      <persName xml:id="pers_Sto">
+        Mrs Stone
+      </persName>
+    </person>
+    <person>
+      <persName xml:id="pers_Grey">
+        Miss Grey
+      </persName>
+    </person>
+    <person>
+      <persName xml:id="pers_Dell">
+        David Dell
+      </persName>
+    </person>
+    <person>
+      <persName xml:id="pers_Pea">
+        Pearl Ramsey
+      </persName>
+    </person>
+    <person>
+      <persName xml:id="pers_Kell">
+        Rev. John Kellie
+      </persName>
+    </person>
+    <person>
+      <persName xml:id="pers_Smi">
+        Mr James Smith
+      </persName>
+    </person>
+  </listPerson>
+
+  <listPlace>
+    <place>
+      <placeName>
+        Girvan
+      </placeName>
+      <idno type="URI">https://www.geonames.org/2648626/girvan.html</idno>
+    </place>
+    <place>
+      <placeName>
+        Greenock
+      </placeName>
+      <idno type="URI">https://www.geonames.org/2647948/greenock.html</idno>
+    </place>
+    <place>
+      <placeName>
+        Houston
+      </placeName>
+      <idno type="URI">https://www.geonames.org/2646507/houston.html</idno>
+    </place>
+    <place>
+      <placeName>
+        England
+      </placeName>
+      <idno type="URI">https://www.geonames.org/6269131/england.html</idno>
+    </place>
+    <place>
+      <placeName>
+        Wareham
+      </placeName>
+      <idno type="URI">https://www.geonames.org/7297602/wareham.html</idno>
+    </place>
+    <place>
+      <placeName>
+        Portsmouth
+      </placeName>
+      <idno type="URI">https://www.geonames.org/2639996/portsmouth.html</idno>
+    </place>
+    <place>
+      <placeName>
+        Brighton
+      </placeName>
+      <idno type="URI">https://www.geonames.org/2654710/brighton.html</idno>
+    </place>
+    <place>
+      <placeName>
+        Wellington
+      </placeName>
+      <idno type="URI">https://www.geonames.org/12262729/wellington.html</idno>
+      <note>Given the context, not the city in New Zealand but probably the town in Cumbria</note>
+    </place>
+    <place>
+      <placeName>
+        Larkfield
+      </placeName>
+      <idno type="URI">https://www.geonames.org/6693668/larkfield.html</idno>
+    </place>
+    <place>
+      <placeName>
+        Amien
+      </placeName>
+      <idno type="URI">https://www.geonames.org/3037854/amiens.html</idno>
+    </place>
+    <place>
+      <placeName>
+        Salonique
+      </placeName>
+      <idno type="URI">https://www.geonames.org/734077/thessaloniki.html</idno>
+    </place>
+    <place>
+      <placeName>
+        London
+      </placeName>
+      <idno type="URI">https://www.geonames.org/2643743/london.html</idno>
+    </place>
+    <place>
+      <placeName>
+        Stockholm
+      </placeName>
+      <idno type="URI">https://www.geonames.org/2673730/stockholm.html</idno>
+    </place>
+    <place>
+      <placeName>
+        St Pauls
+      </placeName>
+      <idno type="URI">https://www.geonames.org/6618004/st-paul-s-cathedral.html</idno>
+    </place>
+    <place>
+      <placeName>
+        Hyde Park
+      </placeName>
+      <idno type="URI">https://www.geonames.org/2646325/hyde-park.html</idno>
+    </place>
+  </listPlace>
+</standOff>
+
+<text>
+     <body>
+
+          <div>
+            <head><persName ref="pers_HB">Helen Borthwick</persName></head>
+          </div>
+
+        <div type="section">
+            <head>
+              <date when-iso="--08-06" calendar="Gregorian">AUGUST 6th</date>
+            </head>
+            <p>
+              <date when-iso="1913-08-06">1913</date>
+               Met <persName ref="pers_All">Allen</persName> at the station on the way to 
+              <placeName>
+                <subst>
+                  <del>Garban</del>
+                  <add place="above">Girvan</add>
+                </subst>
+              </placeName>. 
+            </p>
+            <p>
+              <date when-iso="1914-08-06">1914</date>
+               <persName ref="pers_Ali">Al<del>l</del>ice</persName> came up, dined with me at 
+               <placeName>Green
+                <subst>
+                  <del rend="overwritten">wich</del>
+                  <add>ock</add>
+                </subst>
+              </placeName>
+               , Much excited about War.</p>
+            <p>
+              <date when-iso="1915-08-06">1915</date>
+               Rather tiring, very wet and went to walk in the evening.</p>
+            <p>
+              <date when-iso="1916-08-06">1916</date>
+               Church at night, supper with the <persName ref="pers_Holt">Holtherns</persName> afterwards.</p>
+            <p>
+              <date when-iso="1917-08-06">1917</date>
+               Did some shopping with <persName ref="pers_Jes">Jessie</persName> at <placeName>Houston</placeName></p>
+            <p>
+              <date when-iso="1918-08-06">1918</date>
+               <persName ref="pers_Pat">Patsy</persName> left for camp tonight. 
+               <choice>
+                <orig>Zep.</orig>
+                <reg>Zeppelin</reg>
+              </choice> brought down.</p>
+        </div>
+
+        <div type="section">
+          <head>
+            <date when-iso="--08-07">AUGUST 7th</date>
+          </head>
+          <p>
+            <date when-iso="1913-08-07">1913</date>
+             Uneventful, shopped, walked and mended curtains.</p>
+          <p>
+            <date when-iso="1914-08-07">1914</date>
+             Spent afternoon at 
+             <placeName>Green
+              <subst>
+                <del rend="overwritten">wich</del>
+                <add>ock</add>
+              </subst>
+            </placeName>. Volunteered for Foreign Service.</p>
+          <p>
+            <date when-iso="1915-08-07">1915</date>
+             <persName ref="pers_King">King</persName> arrived back from <placeName>England</placeName>.</p>
+          <p>
+            <date when-iso="1916-08-07">1916</date>
+             Hear that <persName ref="pers_Art">Arthur</persName> is slightly wounded and home on leave.</p>
+          <p>
+            <date when-iso="1917-08-07">1917</date>
+             Letter from <persName ref="pers_Pat">Patsy</persName>. Saw <persName ref="pers_Cook">Doctor Cook</persName>, wrote Committee.</p>
+          <p>
+            <date when-iso="1918-08-07">1918</date>
+             Canteens have improved a little.</p>
+        </div>
+
+      <div type="section">
+        <head>
+          <date when-iso="--08-08">AUGUST 8th</date>
+        </head>
+        <p>
+          <date when-iso="1913-08-08">1913</date>
+           Met <persName ref="pers_Jes">Jessie</persName> in town, lunched and P + C. Went to <persName ref="pers_McDn">McDonald</persName>'s at night.</p>
+        <p>
+          <date when-iso="1914-08-08">1914</date>
+           Very wet day. Went to ask for <persName ref="pers_McDn">Mr McDonald</persName>. <persName ref="pers_McL">Miss McLeod</persName> bad accident</p>
+        <p>
+          <date when-iso="1915-08-08">1915</date>
+           Got off at 4.00, went for a walk with <persName ref="pers_Pat">Patsy</persName>.</p>
+        <p>
+          <date when-iso="1916-08-08">1916</date>
+           Seven new people arrived, they seem very nice.</p>
+        <p>
+          <date when-iso="1917-08-08">1917</date>
+           Three 
+            <placeName>Green
+              <subst>
+                <del rend="overwritten">wich</del>
+                <add>ock</add>
+              </subst>
+            </placeName> boys killed. Germans 
+          <subst>
+            <del rend="strikethrough">will storm</del>
+            <add place="above">forstalled</add>
+          </subst> our offensives.</p>
+        <p>
+          <date when-iso="1918-08-08">1918</date>
+           Left <subst>
+          <del rend="strikethrough">Wearham</del>
+          <add place="above"><placeName>Wareham</placeName></add>
+        </subst> at 
+            <choice>
+              <orig>1.30</orig>
+              <supplied>1.13</supplied>
+            </choice>, 
+            <placeName>Portsmouth</placeName> <del rend="strikethrough">at</del> 5.30.</p>
+      </div>
+
+      <div type="section">
+        <head>
+          <date when-iso="--08-09">AUGUST 9th</date>
+        </head>
+        <p>
+          <date when-iso="1913-08-09">1913</date>
+           <persName ref="pers_PDunn">Mr Dunn</persName> arrived home from <placeName>Brighton</placeName> at 6
+          <subst>
+            <del rend="overwritten">.00</del>
+            <add>o’clock.</add>
+          </subst></p>
+        <p>
+          <date when-iso="1914-08-09">1914</date>
+           Beautiful day, <placeName>Wellington</placeName> morning and evening.</p>
+        <p>
+          <date when-iso="1915-08-09">1915</date>
+           Went into the Wards a.m. Very glad to be back.</p>
+        <p>
+          <date when-iso="1916-08-09">1916</date>
+           New Orderlies tent up.</p>
+        <p>
+          <date when-iso="1917-08-09">1917</date>
+           Walked round 3rd La
+          <subst>
+            <del rend="overwritten">c</del>
+            <add>r</add>
+          </subst>kfield. 
+          <add place="above"><placeName>Larkfield</placeName></add>
+        </p>
+        <p>
+          <date when-iso="1918-08-09">1918</date>
+           British Offensive begun on	<placeName>Amien</placeName> Sector <gap unit="char" quantity="8"/> 7,000 prisoners.</p>
+      </div>
+
+      <div type="section">
+        <head>
+          <date when-iso="--08-10">AUGUST 10th</date>
+        </head>
+        <p>
+          <date when-iso="1913-08-10">1913</date>
+          Went to Church in the morning, <persName ref="pers_Holm">Mr Holmes</persName> called.</p>
+        <p>
+          <date when-iso="1914-08-10">1914</date>
+          <persName ref="pers_PDunn">Mr Dunn</persName> returned tonight. Dentist in town in the morning.</p>
+        <p>
+          <date when-iso="1915-08-10">1915</date>
+          No very serious cases and too many people for work.</p>
+        <p>
+          <date when-iso="1916-08-10">1916</date>
+          The Italians arrived <placeName>Salonique</placeName>. Letters from home.</p>
+        <p>
+          <date when-iso="1917-08-10">1917</date> 
+          <persName ref="pers_Ali">Alice</persName> at <placeName>Huston</placeName>. <persName ref="pers_Sto">Mrs Stone</persName> resigned post with S.W.H.</p>
+        <p>
+          <date when-iso="1918-08-10">1918</date> 
+          Went up to <placeName>London</placeName> <del rend="strikethrough">at</del> 1.55, met <persName ref="pers_Pat">Patsy</persName>, went to Purple Mesh.</p>
+      </div>
+
+      <div type="section">
+        <head>
+          <date when-iso="--08-11">AUGUST 11th</date>
+        </head>
+        <p>
+          <date when-iso="1913-08-11">1913</date>
+           Went into town, uneventful day.</p>
+        <p>
+          <date when-iso="1914-08-11">1914</date>
+           <persName ref="pers_PDunn">Mr Patrick Dunn</persName> for dinner, letter from <persName ref="pers_Grey">Miss Grey</persName></p>
+        <p>
+          <date when-iso="1915-08-11">1915</date>
+           <add place="above">ors admission</add>Very hot in tents, going home on 18th.</p>
+        <p>
+          <date when-iso="1916-08-11">1916</date>
+           <persName ref="pers_Pat">Patsy</persName> out for afternoon, very busy. Stores arrived.</p>
+        <p>
+          <date when-iso="1917-08-11">1917</date>
+           Government refused Passport to <persName ref="pers_Dell">David Dell</persName> for <placeName>Stockholm</placeName> Conference.</p>
+        <p>
+          <date when-iso="1918-08-11">1918</date>
+           Went to <placeName>St. Pauls</placeName>, <placeName>Hyde Park</placeName> in the afternoon. <add>Left 7pm</add></p>
+    </div>
+
+    <div type="section">
+      <head>
+        <date when-iso="--08-12">AUGUST 12th</date>
+      </head>
+      <p>
+        <date when-iso="1913-08-12">1913</date>
+         <persName ref="pers_Pea">Pearl Ramsey</persName> to <persName ref="pers_Kell">Rev. John Kellie</persName></p>
+      <p>
+        <date when-iso="1913-08-12">1913</date>
+         Very hot, <persName ref="pers_Smi">Mr James Smith</persName> 
+        <subst>
+          <del rend="overwritten">D</del>
+          <add>d</add>
+        </subst>ined here.</p></div>
+
+
+     </body>
+</text>
+</TEI>
