@@ -12,7 +12,7 @@
                 <title>
                     <!-- add the title from the metadata. This is what will be shown
                     on your browsers tab-->
-                    Helen Borthwick's diary 1913-1919: Reading Text
+                    Helen Borthwick's diary 1913-1919: Chronological order
                 </title>
                 <!-- load bootstrap css (requires internet!) so you can use their pre-defined css classes to style your html -->
                 <link rel="stylesheet"
@@ -121,7 +121,6 @@
 
     <!-- we remove the headers for this view-->
     <xsl:template match="tei:head">
-        
     </xsl:template>
 
     <!-- transform tei paragraphs into html paragraphs -->
@@ -155,13 +154,11 @@
     </xsl:template>
     
     <!-- sort the days chronologically -->
-    <xsl:template match="body/div/div">
+    <xsl:template match="body/div/div/div">
                 <xsl:for-each select="div">
-                    <xsl:sort select="date" data-type="number"/>
-                    <tr>
-                        <td><xsl:value-of select="date"/></td>
-                        <td><xsl:value-of select="p"/></td>
-                    </tr>
+                    <xsl:sort select="@when-iso" data-type="number"/>
+                    <xsl:value-of select="@when-iso"/>
+                        <xsl:value-of select="p"/>
                 </xsl:for-each>
     </xsl:template>
 
