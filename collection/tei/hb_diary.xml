@@ -22,7 +22,7 @@
         <persName>Martin Fricker</persName>
       </respStmt>
     </titleStmt>
-    <extent>One typewritten page covering six days</extent>
+    <extent>Two typewritten pages covering five days each</extent>
     <publicationStmt>
       <publisher>University of Borås</publisher>
       <date>December 2023</date>
@@ -44,7 +44,7 @@
           <editor role="electronic edition">Leo Esson</editor>
           <title>Helen Borthwick's diary 1913-1919</title>
           <imprint>
-            <biblScope>August 6th - 12th</biblScope>
+            <biblScope>August 6th - 12th and October 6th - 11th</biblScope>
           </imprint>
         </monogr>
       </biblStruct>
@@ -82,6 +82,18 @@
       </figDesc>
       <graphic xml:id="aug6_11_full" url="assets/img/documents/typewritten_august_6_11_edit2.png"></graphic>
       <graphic xml:id="aug6_11_thumb" url="assets/img/documents/typewritten_august_6_11_edit.png"></graphic>
+    </figure>
+  </surface>
+  <surface xml:id="oct6_11">
+    <figure>
+      <label>
+        Typewritten October 6-11th
+      </label>
+      <figDesc>
+        A page from the typewritten transcription of the diary of Helen Borthwick, a nurse with the Scottish Womens Hospital, covering the years 1913-1918. This extract covers October 6th-11th, one line per day.
+      </figDesc>
+      <graphic xml:id="oct6_11_full" url="assets/img/documents/typewritten_oct_6_11_edit2"></graphic>
+      <graphic xml:id="oct6_11_thumb" url="assets/img/documents/typewritten_oct_6_11_edit"></graphic>
     </figure>
   </surface>
 </facsimile>  
@@ -307,8 +319,218 @@
           <del rend="overwritten">D</del>
           <add>d</add>
         </subst>ined here.</p></div>
-
       </div>
+
+      <div type="page" facs="#oct6_11">
+        <div>
+          <head><persName ref="pers_HB">Helen Borthwick</persName></head>
+        </div>
+
+        <div type="section">
+          <head>
+              <date when-iso="--10-06">OCTOBER 6th</date>
+          </head>
+          <p>
+            <date when-iso="1913-10-06">1913</date>
+             <persName ref="pers_MDunn">Miss Dunn</persName> arrived at 
+             <placeName>
+              <address>
+                <addrLine>4 Crown Terrace</addrLine>
+             </address>
+            </placeName>. Went for a walk. Beautiful day.</p>
+          <p>
+            <date when-iso="1914-10-06">1914</date>
+             Beautiful day. Helped to stick on flags for <placeName>Belgium</placeName> Flag Day.</p>
+          <p>
+            <date when-iso="1915-10-06">1915</date>
+             A <subst>
+                <del rend="strikethrough">complement</del>
+                <add place="above">convoy</add>
+              </subst>
+              of 20 men arrived to help us pack.</p>
+          <p>
+            <date when-iso="1916-10-06">1916</date>
+             Dentist at 1.00. Very busy place but very pleasant.</p>
+          <p>
+            <date when-iso="1917-10-06">1917</date>
+             Went for a walk in garden.</p>
+          <p>
+            <date when-iso="1918-10-06">1918</date>
+             Beautiful day. Walked up <placeName>Thames</placeName> about two miles.</p>
+        </div>
+
+        <div type="section">
+          <head>
+            <date when-iso="--10-07">OCTOBER 7th</date>
+          </head>
+          <p>
+            <date when-iso="1913-10-07">1913</date>
+             Singing lesson and lunch in town with <persName ref="pers_Ali">Alice</persName>. Brought hat.</p>
+          <p>
+            <date when-iso="1914-10-07">1914</date>
+             Baked cake for <persName ref="pers_McDg">Mrs McDougall</persName>. Went for walk with <persName ref="pers_Ali">Alice</persName>.</p>
+          <p>
+            <date when-iso="1915-10-07">1915</date>
+             In kitchen all day, <persName ref="pers_Brow">Brown<add>e</add></persName> packing up Field Stuff.</p>
+          <p>
+            <date when-iso="1916-10-07">1916</date>
+             <persName ref="pers_Emil">Dr 
+                <subst>
+                  <del rend="strikethrough">Emaly</del>
+                  <add place="above">Emile</add>
+                </subst>
+              </persName> has gone home with jaundice.</p>
+          <p>
+            <date when-iso="1917-10-07">1917</date>
+             <persName ref="pers_Pat">Patsy</persName> in bed in morning. Very wet day.</p>
+          <p>
+            <date when-iso="1918-10-07">1918</date>
+             Went to <placeName>Woodleigh</placeName>, <del>to</del> discuss managed from 
+             <subst>
+                <del rend="strikethrough">Flowerdown</del>
+                <add place="below">
+                  <placeName>Fareham</placeName>
+                </add>
+             </subst>.</p>
+        </div>
+
+        <div type="section">
+          <head>
+            <date when-iso="--10-08">OCTOBER 8th</date>
+          </head>
+          <p>
+            <date when-iso="1913-10-08">1913</date>
+             <persName ref="pers_Berr">Mr 
+              <choice>
+                <sic>Beryl</sic>
+                <corr>Birrell</corr>
+              </choice>
+            </persName> and <persName ref="pers_Maxw">Sir John S Maxwell</persName> received Freedom of <placeName>Glasgow</placeName>.</p>
+          <p>
+            <date when-iso="1914-10-08">1914</date>
+             Rather showery, walked from <placeName>Kilcreg<add>g</add>an</placeName> to <placeName>Clydebank</placeName> and back.</p>
+          <p>
+            <date when-iso="1915-10-08">1915</date>
+             Started on the Staff Kitchen. <persName ref="pers_Pat">Patsy</persName> helped. Lovely weather.</p>
+          <p>
+            <date when-iso="1916-10-08">1916</date>
+             Went for a walk in the hills with <persName ref="pers_Pat">Patsy</persName>.</p>
+          <p>
+            <date when-iso="1917-10-08">1917</date>
+             <persName ref="pers_MrsI">Mrs I</persName> did not turn up. <persName ref="pers_Gilb">Mrs Gilbert</persName> here.</p>
+          <p>
+            <date when-iso="1918-10-08">1918</date>
+             Stocktaking at <subst>
+              <del rend="strikethrough">Flowerdown</del>
+              <add place="below">
+                <placeName>Fareham</placeName>
+              </add>
+           </subst>.</p>
+        </div>
+
+          <div>
+            <head>
+              <date when-iso="--10-09">OCTOBER 9th</date>
+            </head>
+          <p>
+            <date when-iso="1913-10-09">1913</date>
+             Beautiful day. Went for a walk and read.</p>
+          <p>
+            <date when-iso="1914-10-09">1914</date>
+             <persName ref="pers_Ali">Alice</persName> in <placeName>Glasgow</placeName>, <persName ref="pers_Fyfe">Fyfe</persName> came in afternoon. Looks very well in uniform.</p>
+          <p>
+            <date when-iso="1915-10-09">1915</date>
+             Tents nearly finished. Will be ready to leave next Wednesday.</p>
+          <p>
+            <date when-iso="1916-10-09">1916</date>
+             Hear that <persName ref="pers_Brow">Brownie</persName> is going to <placeName>Rhodesia</placeName>.</p>
+          <p>
+            <date when-iso="1917-10-09">1917</date>
+             <persName ref="pers_Lau">Laura</persName> returned.</p>
+          <p>
+            <date when-iso="1918-10-09">1918</date>
+             French and British spread<add rend="above">speed</add> advance, 
+             <placeName>Cambra
+             <subst>
+                <del rend="overwritten">y</del>
+                <add>i</add>
+             </subst>
+            </placeName> taken.</p>
+        </div>
+
+          <div>
+            <head>
+              <date when-iso="--10-10">OCTOBER 10th</date>
+            </head>
+          <p>
+            <date when-iso="1913-10-10">1913</date>
+             Met <persName ref="pers_Mum">mother</persName> and <persName ref="pers_Ali">Alice</persName> in town. <persName ref="pers_Ali">Alice</persName> brought hat.</p>
+          <p>
+            <date when-iso="1914-10-10">1914</date>
+             <persName ref="pers_Mum">Mother</persName>, <persName ref="pers_Agn">Agnes</persName> and I spent day 
+             <subst>
+              <del rend="strikethrough">with</del>
+              <add place="above">at</add>
+            </subst> <persName ref="pers_McDg">McDougall</persName>’s, very nice.</p>
+          <p>
+            <date when-iso="1915-10-10">1915</date>
+             Packed up last kitchen stuff, leave for <placeName>Paris</placeName> tomorrow.</p>
+          <p>
+            <date when-iso="1916-10-10">1916</date>
+             Went for a walk with <persName ref="pers_AP">A.P.</persName> out by the Aviation.</p>
+          <p>
+            <date when-iso="1917-10-10">1917</date>
+             Went into 
+             <placeName>
+              <choice>
+                <sic>Guilford</sic>
+                <corr>Guildford</corr>
+              </choice>
+            </placeName> shopping.	</p>
+          <p>
+            <date when-iso="1918-10-10">1918</date>
+             Saw the O.C. of R.A.F. at 
+            <placeName>East
+              <subst>
+                <del rend="strikethrough">erly</del>
+                <add place="above">leigh</add>
+              </subst>
+            </placeName>
+            , gave us 
+            <subst>
+              <del rend="overwritten">
+                <unclear unit="chars" quantity="3"></unclear>
+              </del>
+              <add rend="overwritten">tea</add>
+              <add place="above">tea</add>
+            </subst>.</p>
+        </div>
+
+          <div>
+            <head>
+              <date when-iso="--10-11">OCTOBER 11th</date>
+            </head>
+          <p>
+            <date when-iso="1913-10-11">1913</date>
+             Dinner party, quite enjoyable.</p>
+          <p>
+            <date when-iso="1914-10-11">1914</date>
+             Church morning and evening. Fall of <placeName>Antwerp</placeName>.</p>
+          <p>
+            <date when-iso="1915-10-11">1915</date>
+             Left <placeName>Troyes</placeName> with <persName ref="pers_Pat">Patsy</persName> in "Julia" arrived <placeName>Paris</placeName> 7.30</p>
+          <p>
+            <date when-iso="1916-10-11">1916</date>
+             Cake and biscuits from <persName ref="pers_MReid">Margaret Reid</persName>.</p>
+          <p>
+            <date when-iso="1917-10-11">1917</date>
+             Motored farm. <add rend="above">Lunch</add> with <persName ref="pers_Hoth">Hotham</persName></p>
+          <p>
+            <date when-iso="1918-10-11">1918</date>
+             Went to cinema with <persName ref="pers_EDor">E Dory</persName>. Germans asked for Armistice.</p>
+        </div>
+        </div>
+
      </body>
 </text>
 
@@ -416,6 +638,91 @@
         Mr James Smith
       </persName>
     </person>
+    <person>
+        <persName xml:id="pers_MDunn">
+          Miss Dunn
+        </persName>
+      </person>
+      <person>
+        <persName xml:id="pers_McDg">
+          Mrs McDougall
+        </persName>
+      </person>
+      <person>
+        <persName xml:id="pers_Brow">
+          Browne
+        </persName>
+      </person>
+      <person>
+        <persName xml:id="pers_Emil">
+          Dr Emilie
+        </persName>
+      </person>
+      <person>
+        <persName xml:id="pers_Birr">
+          Mr Birrell
+        </persName>
+        <note>
+          Misspelled in the transcription as Beryl, an indication that the transcription was done by reading the diary aloud.
+        </note>
+        <idno type="URI">https://en.wikipedia.org/wiki/Augustine_Birrell</idno>
+      </person>
+      <person>
+        <persName xml:id="pers_Maxw">
+          Sir John S Maxwell
+        </persName>
+        <idno type="URI">https://en.wikipedia.org/wiki/Sir_John_Stirling-Maxwell,_10th_Baronet</idno>
+      </person>
+      <person>
+        <persName xml:id="pers_MrsI">
+          Mrs I
+        </persName>
+      </person>
+      <person>
+        <persName xml:id="pers_Gilb">
+          Mrs Gilbert
+        </persName>
+      </person>
+      <person>
+        <persName xml:id="pers_Fyfe">
+          Fyfe
+        </persName>
+      </person>
+      <person>
+        <persName xml:id="pers_Laur">
+          Laura
+        </persName>
+      </person>
+      <person>
+        <persName xml:id="pers_Mum">
+          Mother
+        </persName>
+      </person>
+      <person>
+        <persName xml:id="pers_Agn">
+          Agnes
+        </persName>
+      </person>
+      <person>
+        <persName xml:id="pers_MReid">
+          Margaret Reid
+        </persName>
+      </person>
+      <person>
+        <persName xml:id="pers_Hoth">
+          Hotham
+        </persName>
+      </person>
+      <person>
+        <persName xml:id="pers_EDor">
+          E Dory
+        </persName>
+      </person>
+      <person>
+        <persName xml:id="pers_AP">
+          A P
+        </persName>
+      </person>
   </listPerson>
 
   <listPlace>
@@ -510,6 +817,78 @@
       </placeName>
       <idno type="URI">https://www.geonames.org/2646325/hyde-park.html</idno>
     </place>
+    <place>
+        <placeName>
+          4 Crown Terrace
+        </placeName>
+      </place>
+      <place>
+        <placeName>
+          Belgium
+        </placeName>
+        <idno type="URI">https://www.geonames.org/2802361/kingdom-of-belgium.html</idno>
+      </place>
+      <place>
+        <placeName>
+          The Thames
+        </placeName>
+        <idno type="URI">https://en.wikipedia.org/wiki/River_Thames</idno>
+      </place>
+      <place>
+        <placeName>
+          Woodleigh
+        </placeName>
+        <idno type="URI">https://www.geonames.org/2633635/woodleigh.html</idno>
+      </place>
+      <place>
+        <placeName>
+          Fareham
+        </placeName>
+        <idno type="URI">https://www.geonames.org/7290556/fareham-district.html</idno>
+      </place>
+      <place>
+        <placeName>
+          Eastleigh
+        </placeName>
+        <idno type="URI">https://www.geonames.org/2650396/eastleigh.html</idno>
+      </place>
+      <place>
+        <placeName>
+          Glasgow
+        </placeName>
+        <idno type="URI">https://www.geonames.org/3333231/glasgow-city.html</idno>
+      </place>
+      <place>
+        <placeName>
+          Rhodesia
+        </placeName>
+        <note>It's not clear whether this refers to the countries now known as Zambia and Zimbabwe or a town in Nottinghamshire, but the former seems more likely</note>
+        <idno type="URI">https://en.wikipedia.org/wiki/Rhodesia_(region)</idno>
+      </place>
+      <place>
+        <placeName>
+          Cambrai
+        </placeName>
+        <idno type="URI">https://www.geonames.org/6454400/cambrai.html</idno>
+      </place>
+      <place>
+        <placeName>
+          Guildford
+        </placeName>
+        <idno type="URI">https://www.geonames.org/2647793/guildford.html</idno>
+      </place>
+      <place>
+        <placeName>
+          Antwerp
+        </placeName>
+        <idno type="URI">https://www.geonames.org/2803138/antwerpen.html</idno>
+      </place>
+      <place>
+        <placeName>
+          Troyes
+        </placeName>
+        <idno type="URI">https://www.geonames.org/6453634/troyes.html</idno>
+      </place>
   </listPlace>
 </standOff>
 

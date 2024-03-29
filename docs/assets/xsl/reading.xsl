@@ -12,7 +12,7 @@
                 <title>
                     <!-- add the title from the metadata. This is what will be shown
                     on your browsers tab-->
-                    DCHM Template: Reading Text
+                    frankensTEIn: Reading Text
                 </title>
                 <!-- load bootstrap css (requires internet!) so you can use their pre-defined css classes to style your html -->
                 <link rel="stylesheet"
@@ -26,7 +26,7 @@
             <body>
                 <header>
                     <h1>
-                        <xsl:apply-templates select="//tei:titleStmt/tei:title"/>
+                        <xsl:apply-templates select="//tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
                     </h1>
                 </header>
                 <nav id="sitenav">
@@ -34,62 +34,39 @@
                     <a href="diplomatic.html">Diplomatic Transcription</a> |
                     <a href="reading.html">Reading Text</a> |
                     <a href="toplayer.html">Top Layer</a> |
+                    
                 </nav>
                 <main id="manuscript">
                     <!-- bootstrap "container" class makes the columns look pretty -->
                     <div class="container">
-                        <!-- define a row layout with bootstrap's css classes (two columns with content, and an empty column in between) -->
+                        <!-- define a row layout with bootstrap's css classes (three columns) -->
                         <div class="row">
+                            <!-- first column: load the thumbnail image based on the IIIF link in the graphic above -->
                             <div class="col-">
-                                <h3>Images</h3>
+                                <article id="thumbnail">
+                                    <img>
+                                        <xsl:attribute name="src">
+                                            <xsl:value-of select="//tei:facsimile/tei:surface//tei:graphic[@xml:id='f21r_thumb']/@url"/>
+                                        </xsl:attribute>
+                                        <xsl:attribute name="title">
+                                            <xsl:value-of select="//tei:facsimile/tei:surface[@xml:id='f21r']//tei:label"/>
+                                        </xsl:attribute>
+                                        <xsl:attribute name="alt">
+                                            <xsl:value-of select="//tei:facsimile/tei:surface[@xml:id='f21r']//tei:figDesc"/>
+                                        </xsl:attribute>
+                                    </img>
+                                </article>
                             </div>
+                            <!-- second column: apply matching templates for anything nested underneath the tei:text element -->
                             <div class="col-md">
-                                <h3>Transcription</h3>
+                                <article id="transcript">
+                                    <xsl:apply-templates select="//tei:TEI//tei:text"/>
+                                </article>
+                            </div>
+                            <!-- third column: empty sidebar -->
+                            <div class="col-">
                             </div>
                         </div>
-                        <!-- set up an image-text pair for each page in your document, and start a new 'row' for each pair -->
-                        <xsl:for-each select="//tei:div[@type='page']">
-                            <!-- save the value of each page's @facs attribute in a variable, so we can use it later -->
-                            <xsl:variable name="facs" select="@facs"/>
-                            <div class="row">
-                                <!-- fill the first column with this page's image -->
-                                <div class="col-">
-                                    <article>
-                                        <!-- make an HTML <img> element, with a maximum width of 100 pixels -->
-                                        <img class="thumbnail">
-                                            <!-- give this HTML <img> attribute three more attributes:
-                                                    @src to locate the image file
-                                                    @title for a mouse-over effect
-                                                    @alt for alternative text (in case the image fails to load, 
-                                                        and so people with a visual impairment can still understant what the image displays 
-                                                  
-                                                  in the XPath expressions below, we use the variable $facs (declared above) 
-                                                        so we can use this page's @facs element with to find the corresponding <surface>
-                                                        (because it matches with the <surface's @xml:id) 
-                                            
-                                                  we use the substring-after() function because when we match our page's @facs with the <surface>'s @xml:id,
-                                                        we want to disregard the hashtag in the @facs attribute-->
-                                            
-                                            <xsl:attribute name="src">
-                                                <xsl:value-of select="//tei:surface[@xml:id=substring-after($facs, '#')]/tei:figure/tei:graphic[2]/@url"/>
-                                            </xsl:attribute>
-                                            <xsl:attribute name="title">
-                                                <xsl:value-of select="//tei:surface[@xml:id=substring-after($facs, '#')]/tei:figure/tei:label"/>
-                                            </xsl:attribute>
-                                            <xsl:attribute name="alt">
-                                                <xsl:value-of select="//tei:surface[@xml:id=substring-after($facs, '#')]/tei:figure/tei:figDesc"/>
-                                            </xsl:attribute>
-                                        </img>
-                                    </article>
-                                </div>
-                                <!-- fill the second column with our transcription -->
-                                <div class='col-md'>
-                                    <article class="transcription">
-                                        <xsl:apply-templates/>                                      
-                                    </article>
-                                </div>
-                            </div>
-                        </xsl:for-each>
                     </div>
                 </main>
                 <footer>
@@ -97,11 +74,11 @@
                   <div class="col-sm copyright">
                       <div>
                         <a href="https://creativecommons.org/licenses/by/4.0/legalcode">
-                            <img src="assets/img/logos/cc.svg" class="copyright_logo" alt="Creative Commons License"/><img src="assets/img/logos/by.svg" class="copyright_logo" alt="Attribution 4.0 International"/>
+                          <img src="assets/img/cc.svg" class="copyright_logo" alt="Creative Commons License"/><img src="assets/img/by.svg" class="copyright_logo" alt="Attribution 4.0 International"/>
                         </a>
                       </div>
                       <div>
-                         2022 Wout Dillen.
+                         2024 Leo Esson.
                       </div>
                     </div>
                 </div>
@@ -154,6 +131,21 @@
         <u>
             <xsl:apply-templates/>
         </u>
+    </xsl:template>
+
+    <!-- transform tei hi (highlighting) with the attribute @rend="sup" into superscript -->
+    <xsl:template match="tei:hi[@rend = 'sup']">
+        <span style="vertical-align:super; font-size:80%;">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+
+    <!-- transform tei hi (highlighting) with the attribute @rend="u" into html u elements -->
+    <!-- how to read the match? "For all tei:hi elements that have a rend attribute with the value "u", do the following" -->
+    <xsl:template match="tei:hi[@rend = 'circled']">
+        <span style="border:1px solid black;border-radius:50%">
+            <xsl:apply-templates/>
+        </span>
     </xsl:template>
 
 
