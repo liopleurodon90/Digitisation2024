@@ -163,7 +163,8 @@
     <xsl:template match="body/div/div">
                 <xsl:for-each select="div/@type=day">
                     <xsl:sort select="date/@when-iso" data-type="number" order="ascending"/>
-                        <xsl:value-of select="p"/>
+                    <xsl:value-of select="date/@when-iso"/>
+                        <xsl:value-of select="div/p"/>
                     <xsl:apply-templates/>
                 </xsl:for-each>
     </xsl:template>
