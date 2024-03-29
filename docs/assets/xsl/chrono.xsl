@@ -119,11 +119,9 @@
     html-->
     <xsl:template match="tei:teiHeader"/>
 
-    <!-- we turn the tei head element (headline) into an html h1 element-->
+    <!-- we remove the headers for this view-->
     <xsl:template match="tei:head">
-        <h2>
-            <xsl:apply-templates/>
-        </h2>
+        
     </xsl:template>
 
     <!-- transform tei paragraphs into html paragraphs -->
@@ -157,19 +155,14 @@
     </xsl:template>
     
     <!-- sort the days chronologically -->
-    <xsl:template match="/">
-        <html>
-            <body>
-                <h2>Chronological order</h2>
-                <xsl:for-each select="p">
-                    <xsl:sort select="date"/>
+    <xsl:template match="/body">
+                <xsl:for-each select="div/p">
+                    <xsl:sort select="date" data-type="numeric"/>
                     <tr>
                         <td><xsl:value-of select="date"/></td>
                         <td><xsl:value-of select="p"/></td>
                     </tr>
                 </xsl:for-each>
-            </body>
-        </html>
     </xsl:template>
 
 
