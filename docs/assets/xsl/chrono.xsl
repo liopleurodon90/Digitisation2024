@@ -153,11 +153,16 @@
         </u>
     </xsl:template>
     
+    <!-- do not show date-->
+    <xsl:template match="tei:date">
+        <xsl:value-of select="date/@when-iso"/>
+            <xsl:apply-templates/>
+    </xsl:template>
+    
     <!-- sort the days chronologically -->
-    <xsl:template match="body/div/div/div">
-                <xsl:for-each select="div">
-                    <xsl:sort select="@when-iso" data-type="number"/>
-                    <xsl:value-of select="@when-iso"/>
+    <xsl:template match="body/div/div">
+                <xsl:for-each select="div/@type=day">
+                    <xsl:sort select="date/@when-iso" data-type="number" order="ascending"/>
                         <xsl:value-of select="p"/>
                     <xsl:apply-templates/>
                 </xsl:for-each>
