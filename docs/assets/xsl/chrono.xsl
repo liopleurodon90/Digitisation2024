@@ -159,6 +159,7 @@
                     <xsl:sort select="@when-iso" data-type="number"/>
                     <xsl:value-of select="@when-iso"/>
                         <xsl:value-of select="p"/>
+                    <xsl:apply-templates/>
                 </xsl:for-each>
     </xsl:template>
 
