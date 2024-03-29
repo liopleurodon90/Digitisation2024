@@ -155,9 +155,9 @@
     </xsl:template>
     
     <!-- sort the days chronologically -->
-    <xsl:template match="/p">
-                <xsl:for-each select="p">
-                    <xsl:sort select="p/date" data-type="number"/>
+    <xsl:template match="body/div/div">
+                <xsl:for-each select="div">
+                    <xsl:sort select="date" data-type="number"/>
                     <tr>
                         <td><xsl:value-of select="date"/></td>
                         <td><xsl:value-of select="p"/></td>

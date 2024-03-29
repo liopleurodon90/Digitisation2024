@@ -105,7 +105,7 @@
 
       <div type="page" facs="#aug6_11">
 
-          <div>
+          <div type="header">
             <head><persName ref="pers_HB">Helen Borthwick</persName></head>
           </div>
 
@@ -113,7 +113,9 @@
             <head>
               <date when-iso="--08-06" calendar="Gregorian">AUGUST 6th</date>
             </head>
-            <p>
+          
+            <div type="day">
+              <p>
               <date when-iso="1913-08-06">1913</date>
                Met <persName ref="pers_All">Allen</persName> at the station on the way to 
               <placeName>
@@ -123,7 +125,10 @@
                 </subst>
               </placeName>. 
             </p>
-            <p>
+            </div>
+          
+            <div type="day">
+              <p>
               <date when-iso="1914-08-06">1914</date>
                <persName ref="pers_Ali">Al<del>l</del>ice</persName> came up, dined with me at 
                <placeName>Green
@@ -133,32 +138,48 @@
                 </subst>
               </placeName>
                , Much excited about War.</p>
-            <p>
+            </div>
+          
+          <div type="day">  
+          <p>
               <date when-iso="1915-08-06">1915</date>
-               Rather tiring, very wet and went to walk in the evening.</p>
-            <p>
+               Rather tiring, very wet and went to walk in the evening.
+          </p>
+          </div>
+          
+          <div type="day"> 
+          <p>
               <date when-iso="1916-08-06">1916</date>
                Church at night, supper with the <persName ref="pers_Holt">Holtherns</persName> afterwards.</p>
-            <p>
+            </div>
+          
+          <div>
+          <p>
               <date when-iso="1917-08-06">1917</date>
                Did some shopping with <persName ref="pers_Jes">Jessie</persName> at <placeName>Houston</placeName></p>
-            <p>
+            </div>
+          
+          <div type="day">
+          <p>
               <date when-iso="1918-08-06">1918</date>
                <persName ref="pers_Pat">Patsy</persName> left for camp tonight. 
                <choice>
                 <orig>Zep.</orig>
                 <reg>Zeppelin</reg>
               </choice> brought down.</p>
+          </div>
         </div>
 
         <div type="section">
           <head>
             <date when-iso="--08-07">AUGUST 7th</date>
           </head>
-          <p>
+          
+          <div type="day"><p>
             <date when-iso="1913-08-07">1913</date>
-             Uneventful, shopped, walked and mended curtains.</p>
-          <p>
+             Uneventful, shopped, walked and mended curtains.</p></div>
+          
+          <div type="day"><p>
             <date when-iso="1914-08-07">1914</date>
              Spent afternoon at 
              <placeName>Green
@@ -166,38 +187,48 @@
                 <del rend="overwritten">wich</del>
                 <add>ock</add>
               </subst>
-            </placeName>. Volunteered for Foreign Service.</p>
-          <p>
+            </placeName>. Volunteered for Foreign Service.</p></div>
+          
+          <div type="day"><p>
             <date when-iso="1915-08-07">1915</date>
-             <persName ref="pers_King">King</persName> arrived back from <placeName>England</placeName>.</p>
-          <p>
+             <persName ref="pers_King">King</persName> arrived back from <placeName>England</placeName>.</p></div>
+          
+          <div type="day"><p>
             <date when-iso="1916-08-07">1916</date>
-             Hear that <persName ref="pers_Art">Arthur</persName> is slightly wounded and home on leave.</p>
-          <p>
+             Hear that <persName ref="pers_Art">Arthur</persName> is slightly wounded and home on leave.</p></div>
+          
+          <div type="day"><p>
             <date when-iso="1917-08-07">1917</date>
              Letter from <persName ref="pers_Pat">Patsy</persName>. Saw <persName ref="pers_Cook">Doctor Cook</persName>, wrote Committee.</p>
-          <p>
+          </div>
+          
+          <div type="day"><p>
             <date when-iso="1918-08-07">1918</date>
-             Canteens have improved a little.</p>
+             Canteens have improved a little.</p></div>
         </div>
 
       <div type="section">
         <head>
           <date when-iso="--08-08">AUGUST 8th</date>
         </head>
-        <p>
+        
+        <div type="day"><p>
           <date when-iso="1913-08-08">1913</date>
            Met <persName ref="pers_Jes">Jessie</persName> in town, lunched and P + C. Went to <persName ref="pers_McDn">McDonald</persName>'s at night.</p>
-        <p>
+        </div>
+        <div type="day"><p>
           <date when-iso="1914-08-08">1914</date>
            Very wet day. Went to ask for <persName ref="pers_McDn">Mr McDonald</persName>. <persName ref="pers_McL">Miss McLeod</persName> bad accident</p>
-        <p>
+        </div>
+        <div type="day"><p>
           <date when-iso="1915-08-08">1915</date>
            Got off at 4.00, went for a walk with <persName ref="pers_Pat">Patsy</persName>.</p>
-        <p>
+        </div>
+        <div><p>
           <date when-iso="1916-08-08">1916</date>
            Seven new people arrived, they seem very nice.</p>
-        <p>
+        </div>
+        <div type="day"><p>
           <date when-iso="1917-08-08">1917</date>
            Three 
             <placeName>Green
@@ -210,7 +241,8 @@
             <del rend="strikethrough">will storm</del>
             <add place="above">forstalled</add>
           </subst> our offensives.</p>
-        <p>
+        </div>
+        <div type="day"><p>
           <date when-iso="1918-08-08">1918</date>
            Left <subst>
           <del rend="strikethrough">Wearham</del>
@@ -221,29 +253,35 @@
               <supplied>1.13</supplied>
             </choice>, 
             <placeName>Portsmouth</placeName> <del rend="strikethrough">at</del> 5.30.</p>
+        </div>
       </div>
 
       <div type="section">
         <head>
           <date when-iso="--08-09">AUGUST 9th</date>
         </head>
-        <p>
+        
+        <div  type="day"><p>
           <date when-iso="1913-08-09">1913</date>
            <persName ref="pers_PDunn">Mr Dunn</persName> arrived home from <placeName>Brighton</placeName> at 6
           <subst>
             <del rend="overwritten">.00</del>
             <add>o’clock.</add>
           </subst></p>
-        <p>
+        </div>
+        <div type="day"><p>
           <date when-iso="1914-08-09">1914</date>
            Beautiful day, <placeName>Wellington</placeName> morning and evening.</p>
-        <p>
+        </div>
+        <div type="day"><p>
           <date when-iso="1915-08-09">1915</date>
            Went into the Wards a.m. Very glad to be back.</p>
-        <p>
+        </div>
+        <div type="day"><p>
           <date when-iso="1916-08-09">1916</date>
            New Orderlies tent up.</p>
-        <p>
+        </div>
+        <div type="day"><p>
           <date when-iso="1917-08-09">1917</date>
            Walked round 3rd La
           <subst>
@@ -252,77 +290,96 @@
           </subst>kfield. 
           <add place="above"><placeName>Larkfield</placeName></add>
         </p>
-        <p>
+        </div>
+        <div type="day"><p>
           <date when-iso="1918-08-09">1918</date>
            British Offensive begun on	<placeName>Amien</placeName> Sector <gap unit="char" quantity="8"/> 7,000 prisoners.</p>
+      </div>
       </div>
 
       <div type="section">
         <head>
           <date when-iso="--08-10">AUGUST 10th</date>
         </head>
-        <p>
+        
+        <div  type="day"><p>
           <date when-iso="1913-08-10">1913</date>
           Went to Church in the morning, <persName ref="pers_Holm">Mr Holmes</persName> called.</p>
-        <p>
+        </div>
+        <div type="day"><p>
           <date when-iso="1914-08-10">1914</date>
           <persName ref="pers_PDunn">Mr Dunn</persName> returned tonight. Dentist in town in the morning.</p>
-        <p>
+        </div>
+        <div type="day"><p>
           <date when-iso="1915-08-10">1915</date>
           No very serious cases and too many people for work.</p>
-        <p>
+        </div>
+        <div type="day"><p>
           <date when-iso="1916-08-10">1916</date>
           The Italians arrived <placeName>Salonique</placeName>. Letters from home.</p>
-        <p>
+        </div>
+        <div type="day"><p>
           <date when-iso="1917-08-10">1917</date> 
           <persName ref="pers_Ali">Alice</persName> at <placeName>Huston</placeName>. <persName ref="pers_Sto">Mrs Stone</persName> resigned post with S.W.H.</p>
-        <p>
+        </div>
+        <div type="day"><p>
           <date when-iso="1918-08-10">1918</date> 
           Went up to <placeName>London</placeName> <del rend="strikethrough">at</del> 1.55, met <persName ref="pers_Pat">Patsy</persName>, went to Purple Mesh.</p>
+      </div>
       </div>
 
       <div type="section">
         <head>
           <date when-iso="--08-11">AUGUST 11th</date>
         </head>
-        <p>
+        
+        <div type="day"><p>
           <date when-iso="1913-08-11">1913</date>
            Went into town, uneventful day.</p>
-        <p>
+        </div>
+        <div type="day"><p>
           <date when-iso="1914-08-11">1914</date>
            <persName ref="pers_PDunn">Mr Patrick Dunn</persName> for dinner, letter from <persName ref="pers_Grey">Miss Grey</persName></p>
-        <p>
+        </div>
+        <div type="day"><p>
           <date when-iso="1915-08-11">1915</date>
            <add place="above">ors admission</add>Very hot in tents, going home on 18th.</p>
-        <p>
+        </div>
+        <div type="day"><p>
           <date when-iso="1916-08-11">1916</date>
            <persName ref="pers_Pat">Patsy</persName> out for afternoon, very busy. Stores arrived.</p>
-        <p>
+        </div>
+        <div type="day"><p>
           <date when-iso="1917-08-11">1917</date>
            Government refused Passport to <persName ref="pers_Dell">David Dell</persName> for <placeName>Stockholm</placeName> Conference.</p>
-        <p>
+        </div>
+        <div type="day"><p>
           <date when-iso="1918-08-11">1918</date>
            Went to <placeName>St. Pauls</placeName>, <placeName>Hyde Park</placeName> in the afternoon. <add>Left 7pm</add></p>
-    </div>
+        </div>
+      </div>
 
     <div type="section">
       <head>
         <date when-iso="--08-12">AUGUST 12th</date>
       </head>
-      <p>
+      
+      <div type="day"><p>
         <date when-iso="1913-08-12">1913</date>
          <persName ref="pers_Pea">Pearl Ramsey</persName> to <persName ref="pers_Kell">Rev. John Kellie</persName></p>
-      <p>
+      </div>
+      <div type="day"><p>
         <date when-iso="1913-08-12">1913</date>
          Very hot, <persName ref="pers_Smi">Mr James Smith</persName> 
         <subst>
           <del rend="overwritten">D</del>
           <add>d</add>
         </subst>ined here.</p></div>
-      </div>
+    </div>
+   </div>
 
       <div type="page" facs="#oct6_11">
-        <div>
+        <div  type="header">
           <head><persName ref="pers_HB">Helen Borthwick</persName></head>
         </div>
 
@@ -330,7 +387,8 @@
           <head>
               <date when-iso="--10-06">OCTOBER 6th</date>
           </head>
-          <p>
+          
+          <div type="day"><p>
             <date when-iso="1913-10-06">1913</date>
              <persName ref="pers_MDunn">Miss Dunn</persName> arrived at 
              <placeName>
@@ -338,41 +396,51 @@
                 <addrLine>4 Crown Terrace</addrLine>
              </address>
             </placeName>. Went for a walk. Beautiful day.</p>
-          <p>
+          </div>
+          <div type="day"><p>
             <date when-iso="1914-10-06">1914</date>
              Beautiful day. Helped to stick on flags for <placeName>Belgium</placeName> Flag Day.</p>
-          <p>
+          </div>
+          <div type="day"><p>
             <date when-iso="1915-10-06">1915</date>
              A <subst>
                 <del rend="strikethrough">complement</del>
                 <add place="above">convoy</add>
               </subst>
               of 20 men arrived to help us pack.</p>
-          <p>
+          </div>
+          <div type="day"><p>
             <date when-iso="1916-10-06">1916</date>
              Dentist at 1.00. Very busy place but very pleasant.</p>
-          <p>
+          </div>
+          <div type="day"><p>
             <date when-iso="1917-10-06">1917</date>
              Went for a walk in garden.</p>
-          <p>
+          </div>
+          <div type="day"><p>
             <date when-iso="1918-10-06">1918</date>
              Beautiful day. Walked up <placeName>Thames</placeName> about two miles.</p>
+        </div>
         </div>
 
         <div type="section">
           <head>
             <date when-iso="--10-07">OCTOBER 7th</date>
           </head>
-          <p>
+          
+          <div type="day"><p>
             <date when-iso="1913-10-07">1913</date>
              Singing lesson and lunch in town with <persName ref="pers_Ali">Alice</persName>. Brought hat.</p>
-          <p>
+          </div>
+          <div type="day"><p>
             <date when-iso="1914-10-07">1914</date>
              Baked cake for <persName ref="pers_McDg">Mrs McDougall</persName>. Went for walk with <persName ref="pers_Ali">Alice</persName>.</p>
-          <p>
+          </div>
+          <div type="day"><p>
             <date when-iso="1915-10-07">1915</date>
              In kitchen all day, <persName ref="pers_Brow">Brown<add>e</add></persName> packing up Field Stuff.</p>
-          <p>
+          </div>
+          <div type="day"><p>
             <date when-iso="1916-10-07">1916</date>
              <persName ref="pers_Emil">Dr 
                 <subst>
@@ -380,10 +448,12 @@
                   <add place="above">Emile</add>
                 </subst>
               </persName> has gone home with jaundice.</p>
-          <p>
+          </div>
+          <div type="day"><p>
             <date when-iso="1917-10-07">1917</date>
              <persName ref="pers_Pat">Patsy</persName> in bed in morning. Very wet day.</p>
-          <p>
+          </div>
+          <div type="day"><p>
             <date when-iso="1918-10-07">1918</date>
              Went to <placeName>Woodleigh</placeName>, <del>to</del> discuss managed from 
              <subst>
@@ -392,13 +462,15 @@
                   <placeName>Fareham</placeName>
                 </add>
              </subst>.</p>
+          </div>
         </div>
 
         <div type="section">
           <head>
             <date when-iso="--10-08">OCTOBER 8th</date>
           </head>
-          <p>
+          
+          <div type="day"><p>
             <date when-iso="1913-10-08">1913</date>
              <persName ref="pers_Berr">Mr 
               <choice>
@@ -406,19 +478,24 @@
                 <corr>Birrell</corr>
               </choice>
             </persName> and <persName ref="pers_Maxw">Sir John S Maxwell</persName> received Freedom of <placeName>Glasgow</placeName>.</p>
-          <p>
+          </div>
+          <div type="day"><p>
             <date when-iso="1914-10-08">1914</date>
              Rather showery, walked from <placeName>Kilcreg<add>g</add>an</placeName> to <placeName>Clydebank</placeName> and back.</p>
-          <p>
+          </div>
+          <div type="day"><p>
             <date when-iso="1915-10-08">1915</date>
              Started on the Staff Kitchen. <persName ref="pers_Pat">Patsy</persName> helped. Lovely weather.</p>
-          <p>
+          </div>
+          <div type="day"><p>
             <date when-iso="1916-10-08">1916</date>
              Went for a walk in the hills with <persName ref="pers_Pat">Patsy</persName>.</p>
-          <p>
+          </div>
+          <div type="day"><p>
             <date when-iso="1917-10-08">1917</date>
              <persName ref="pers_MrsI">Mrs I</persName> did not turn up. <persName ref="pers_Gilb">Mrs Gilbert</persName> here.</p>
-          <p>
+          </div>
+          <div type="day"><p>
             <date when-iso="1918-10-08">1918</date>
              Stocktaking at <subst>
               <del rend="strikethrough">Flowerdown</del>
@@ -426,28 +503,36 @@
                 <placeName>Fareham</placeName>
               </add>
            </subst>.</p>
+          </div>
         </div>
 
           <div>
             <head>
               <date when-iso="--10-09">OCTOBER 9th</date>
             </head>
-          <p>
+            
+            <div type="day"><p>
             <date when-iso="1913-10-09">1913</date>
              Beautiful day. Went for a walk and read.</p>
-          <p>
+            </div>
+            
+            <div type="day"><p>
             <date when-iso="1914-10-09">1914</date>
              <persName ref="pers_Ali">Alice</persName> in <placeName>Glasgow</placeName>, <persName ref="pers_Fyfe">Fyfe</persName> came in afternoon. Looks very well in uniform.</p>
-          <p>
+          </div>
+            <div type="day"><p>
             <date when-iso="1915-10-09">1915</date>
              Tents nearly finished. Will be ready to leave next Wednesday.</p>
-          <p>
+            </div>
+            <div type="day"><p>
             <date when-iso="1916-10-09">1916</date>
              Hear that <persName ref="pers_Brow">Brownie</persName> is going to <placeName>Rhodesia</placeName>.</p>
-          <p>
+          </div>
+            <div type="day"><p>
             <date when-iso="1917-10-09">1917</date>
              <persName ref="pers_Lau">Laura</persName> returned.</p>
-          <p>
+          </div>
+            <div type="day"><p>
             <date when-iso="1918-10-09">1918</date>
              French and British spread<add rend="above">speed</add> advance, 
              <placeName>Cambra
@@ -456,29 +541,35 @@
                 <add>i</add>
              </subst>
             </placeName> taken.</p>
+            </div>
         </div>
 
           <div>
             <head>
               <date when-iso="--10-10">OCTOBER 10th</date>
             </head>
-          <p>
+            
+            <div type="day"><p>
             <date when-iso="1913-10-10">1913</date>
              Met <persName ref="pers_Mum">mother</persName> and <persName ref="pers_Ali">Alice</persName> in town. <persName ref="pers_Ali">Alice</persName> brought hat.</p>
-          <p>
+            </div>
+            <div type="day"><p>
             <date when-iso="1914-10-10">1914</date>
              <persName ref="pers_Mum">Mother</persName>, <persName ref="pers_Agn">Agnes</persName> and I spent day 
              <subst>
               <del rend="strikethrough">with</del>
               <add place="above">at</add>
             </subst> <persName ref="pers_McDg">McDougall</persName>’s, very nice.</p>
-          <p>
+            </div>
+            <div type="day"><p>
             <date when-iso="1915-10-10">1915</date>
              Packed up last kitchen stuff, leave for <placeName>Paris</placeName> tomorrow.</p>
-          <p>
+            </div>
+            <div type="day"><p>
             <date when-iso="1916-10-10">1916</date>
              Went for a walk with <persName ref="pers_AP">A.P.</persName> out by the Aviation.</p>
-          <p>
+            </div>
+            <div type="day"><p>
             <date when-iso="1917-10-10">1917</date>
              Went into 
              <placeName>
@@ -487,7 +578,8 @@
                 <corr>Guildford</corr>
               </choice>
             </placeName> shopping.	</p>
-          <p>
+            </div>
+            <div type="day"><p>
             <date when-iso="1918-10-10">1918</date>
              Saw the O.C. of R.A.F. at 
             <placeName>East
@@ -504,30 +596,38 @@
               <add rend="overwritten">tea</add>
               <add place="above">tea</add>
             </subst>.</p>
+            </div>
         </div>
 
           <div>
             <head>
               <date when-iso="--10-11">OCTOBER 11th</date>
             </head>
-          <p>
+            
+            <div type="day"><p>
             <date when-iso="1913-10-11">1913</date>
              Dinner party, quite enjoyable.</p>
-          <p>
+            </div>
+            <div type="day"><p>
             <date when-iso="1914-10-11">1914</date>
              Church morning and evening. Fall of <placeName>Antwerp</placeName>.</p>
-          <p>
+            </div>
+            <div type="day"><p>
             <date when-iso="1915-10-11">1915</date>
              Left <placeName>Troyes</placeName> with <persName ref="pers_Pat">Patsy</persName> in "Julia" arrived <placeName>Paris</placeName> 7.30</p>
-          <p>
+          </div>
+            <div type="day"><p>
             <date when-iso="1916-10-11">1916</date>
              Cake and biscuits from <persName ref="pers_MReid">Margaret Reid</persName>.</p>
-          <p>
+            </div>
+            <div type="day"><p>
             <date when-iso="1917-10-11">1917</date>
              Motored farm. <add rend="above">Lunch</add> with <persName ref="pers_Hoth">Hotham</persName></p>
-          <p>
+            </div>
+            <div type="day"><p>
             <date when-iso="1918-10-11">1918</date>
              Went to cinema with <persName ref="pers_EDor">E Dory</persName>. Germans asked for Armistice.</p>
+            </div>
         </div>
         </div>
 
