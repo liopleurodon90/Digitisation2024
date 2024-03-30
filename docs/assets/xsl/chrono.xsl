@@ -160,13 +160,12 @@
     </xsl:template>
     
     <!-- sort the days chronologically -->
-    <xsl:template match="body/div/div">
-                <xsl:for-each select="div/@type=day">
-                    <xsl:sort select="date/@when-iso" data-type="number" order="ascending"/>
-                    <xsl:value-of select="date/@when-iso"/>
-                        <xsl:value-of select="div/p"/>
-                    <xsl:apply-templates/>
-                </xsl:for-each>
+    <xsl:template match="body">
+                <xsl:for-each select="div/[@type=day]">
+                    <xsl:sort select="date/[@when-iso]" data-type="number" order="ascending"/>
+                    <xsl:for-each value-of ="div"/>
+                            <xsl:apply-templates/>
+                     </xsl:for-each>       
     </xsl:template>
 
 
