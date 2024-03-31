@@ -85,7 +85,12 @@
                                 <!-- fill the second column with our transcription -->
                                 <div class='col-md'>
                                     <article class="transcription">
-                                        <xsl:apply-templates/>                                      
+                                        <xsl:attribute name="dates">
+                                            <xsl:value-of select="//tei:div/tei:p/tei:date[@when-iso]"/>
+                                        </xsl:attribute>
+                                        <xsl:apply-templates/>   
+                                        
+             
                                     </article>
                                 </div>
                             </div>
@@ -153,20 +158,37 @@
         </u>
     </xsl:template>
     
-    <!-- do not show date-->
-    <xsl:template match="tei:date">
-        <xsl:value-of select="date/@when-iso"/>
-            <xsl:apply-templates/>
+    <!-- show full date-->
+    
+    <xsl:template match="date">
+    
+        <xsl:variable name="when_iso" select="date[@when-iso]" />
+    
+        <xsl:for-each select="date">
+    
+            <p>
+                <xsl:value-of select="/date/@when-iso"/>
+                <xsl:apply-templates/>
+            </p>
+        </xsl:for-each>
     </xsl:template>
     
-    <!-- sort the days chronologically -->
+    <xsl:template match="div">
+        <p>
+            <xsl:value-of select="ancestor-or-self::*[@when-iso][1]/@when-iso"/>
+        </p>
+        <xsl:apply-templates/>
+    </xsl:template>
+    
+    
+      <!-- sort the days chronologically 
+        
+    
     <xsl:template match="body">
-                <xsl:for-each select="div/[@type=day]">
-                    <xsl:sort select="date/[@when-iso]" data-type="number" order="ascending"/>
-                    <xsl:for-each value-of ="div"/>
+                <xsl:for-each select="div/[@type='day']">
+                    <xsl:sort select="date[@when-iso]" order="ascending"/>
                             <xsl:apply-templates/>
                      </xsl:for-each>       
-    </xsl:template>
-
-
+    </xsl:template> -->
+        
 </xsl:stylesheet>
