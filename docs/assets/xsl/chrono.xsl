@@ -158,7 +158,7 @@
         </u>
     </xsl:template>
     
-    <!-- show full date-->
+    <!-- show full date -->
     
     <xsl:template match="date">
     
