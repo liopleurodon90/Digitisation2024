@@ -12,7 +12,7 @@
                 <title>
                     <!-- add the title from the metadata. This is what will be shown
                     on your browsers tab-->
-                    Helen Borthwick's diary 1913-1919: Home
+                    Helen Borthwick's diary 1913-1919: People and Places
                 </title>
                 <!-- load bootstrap css (requires internet!) so you can use their pre-defined css classes to style your html -->
                 <link rel="stylesheet"
@@ -62,9 +62,13 @@
                             <div class="col-sm">
                                 <article id="description">
                                   <p>
-                                    <strong>Description:</strong> &#160;
-                                    <xsl:apply-templates select="//tei:encodingDesc"/>
+                                    <strong>People:</strong> &#160;
+                                    <xsl:apply-templates select="//tei:standOff/tei:listPerson"/>
                                   </p>
+                                    <p>
+                                       <strong>Places:</strong> &#160;
+                                       <xsl:apply-templates select="//tei:standOff/tei:listPlace"/>
+                                    </p>
                                 </article>
                             </div>
                         </div>
