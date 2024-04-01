@@ -63,11 +63,31 @@
                                 <article id="description">
                                   <p>
                                     <strong>People:</strong> &#160;
-                                    <xsl:apply-templates select="//tei:standOff/tei:listPerson"/>
+                                    
+                                      <table>
+                                          <tr>
+                                              <th>Name</th>
+                                              <th>Note</th>
+                                              <th>URI</th>
+                                          </tr>
+                                          <xsl:for-each select="/tei:listPerson/tei:person">
+                                              <xsl:sort select="tei:person/tei:persName"/>
+                                              <tr>
+                                                  <td><xsl:value-of select="tei:person/tei:persName"/></td>
+                                                  <td><xsl:value-of select="tei:person/tei:note"/></td>
+                                                  <td><xsl:value-of select="tei:person/tei:idno"/></td>
+                                              </tr>
+                                          </xsl:for-each>
+                                      </table>
+                                      <xsl:apply-templates select="//tei:standOff/tei:listPerson"/>
                                   </p>
+                                    
                                     <p>
                                        <strong>Places:</strong> &#160;
                                        <xsl:apply-templates select="//tei:standOff/tei:listPlace"/>
+                                        <xsl:apply-templates select="/tei:listPlace/tei:placeName"/>
+                                        <xsl:apply-templates select="/tei:listPlace/tei:idno"/>
+                                        <xsl:apply-templates select="/tei:listPlace/tei:note"/>    
                                     </p>
                                 </article>
                             </div>
@@ -108,4 +128,27 @@
             </body>
         </html>
     </xsl:template>
+    
+    <xsl:template match="idno">
+        <a href="{.}"><xsl:value-of select="."/> </a>
+    </xsl:template>
+    
+    <xsl:template match="tei:standOff">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Note</th>
+                        <th>URI</th>
+                    </tr>
+                    <xsl:for-each select="/tei:listPerson/tei:person">
+                        <xsl:sort select="tei:person/tei:persName"/>
+                        <tr>
+                            <td><xsl:value-of select="tei:person/tei:persName"/></td>
+                            <td><xsl:value-of select="tei:person/tei:note"/></td>
+                            <td><xsl:value-of select="tei:person/tei:idno"/></td>
+                        </tr>
+                    </xsl:for-each>
+                </table>
+    </xsl:template>
+    
 </xsl:stylesheet>
